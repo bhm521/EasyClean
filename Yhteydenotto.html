@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="EasyClean" content="Hinnasto ja tilaus">
+    <meta name="author" content="Aatu Harju">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Blue_Simple_Bottle_2.png">
+    <title>EasyClean</title>
+</head>
+
+<body>
+    <div class="site-container">
+
+        <div class="topbar">
+
+            <a href="index.html"><img class="logo" alt="EasyCleanin logo"
+                    src="Blue_Simple_Bottle_House_Cleaning_Logo_(4)-transformed.png"></a>
+
+            <ul>
+                <li><a href="hinnasto.html">Hinnasto</a></li>
+                <li><a href="meista.html">Meistä</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </div>
+
+        <div class="topbar-mobile">
+
+            <a href="index.html"><img class="logo-mobile" alt="EasyCleanin logo"
+                    src="Blue_Simple_Bottle_House_Cleaning_Logo_(4)-transformed.png"></a>
+            <br>
+
+            <ul>
+                <li><a href="hinnasto.html" class="mobile-topbar-nappi">Hinnasto</a></li>
+                <li><a href="meista.html" class="mobile-topbar-nappi">Meistä</a></li>
+                <li><a href="yhteystiedot.html" class="mobile-topbar-nappi">Yhteystiedot</a></li>
+            </ul>
+        </div>
+
+        <div class="yhteydenotto-ekasisältö">
+            <div class="yhteydenotto-form">
+                <form action="https://formspree.io/f/mleqldva" method="POST">
+
+
+                    <label for="name">Nimi:</label>
+                    <input type="text" id="name" name="name" placeholder="Etunimi + Sukunimi" required>
+
+
+
+                    <label for="email">Sähköposti:</label>
+                    <input type="email" id="email" name="_replyto" placeholder="esimerkki@email.com" required>
+
+
+
+                    <label for="message">Viesti:</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Minkä palvelun haluat + tilan koko + mahdolliset muut lisätiedot."
+                        required></textarea>
+                    <div class="puhelinnumero-teksti">
+                        <p>(Halutessanne voimme olla yhteydessä myös puhelimitse. Kerro puhelinnumerosi viestikentässä)
+                        </p>
+                    </div>
+
+                    <button class="hienonappi2" type="submit">Lähetä</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="linkit">
+            <h2>Linkit</h2>
+            <ul>
+                <li><a href="index.html">EasyClean</a></li>
+                <li><a href="hinnasto.html">Hinnasto</a></li>
+                <li><a href="meista.html">Meistä</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </div>
+
+        <div class="ota-yhteyttä">
+            <h2>Ota yhteyttä</h2>
+
+            <p>Sähköposti: esimerkki@gmail.com</p>
+            <p>Puhelinnumero: +358451234567</p>
+
+        </div>
+
+        <div class="seuraa-meitä">
+            <h2>Seuraa meitä</h2>
+            <div class="someikonit">
+                <a href=""><img class="ikoni" alt="Instagram logo" src="Instagram_Glyph_Gradient.png"></a>
+                <a href=""><img class="ikoni" alt="Facebook logo" src="Facebook_Logo_Primary.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

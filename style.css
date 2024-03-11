@@ -1,0 +1,640 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('Roboto/Roboto-Bold.ttf');
+}
+
+body {
+  background: rgb(0, 160, 223);
+  background: linear-gradient(rgba(0, 160, 223, 1) 0%, rgba(0, 183, 194, 1) 100%);
+  padding: 10px;
+  margin: 0;
+}
+
+.topbar-mobile {
+  display: none;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  font-family: 'Roboto-Bold', sans-serif;
+  background-color: #0077A7;
+  color: #00668f;
+  z-index: 999;
+  box-shadow: 0px 1px 5px;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #006b95;
+}
+
+.topbar ul {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+}
+
+.logo {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 200px;
+  height: auto;
+}
+
+.logo-mobile {
+  margin: 0px 0px 50px 0px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 100%;
+  max-height: 150px;
+}
+
+#siivousvalineet {
+  max-width: 100%;
+  max-height: 800px;
+}
+
+#siivooja {
+  max-width: 100%;
+  max-height: 800px;
+}
+
+
+.ekasisältö {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 10px 60px 10px;
+  border: 4px solid rgb(255, 255, 255);
+  margin-top: 140px;
+}
+
+.tokasisältö {
+  text-align: center;
+  border-radius: 10px;
+  border: 4px solid rgb(255, 255, 255);
+  margin-top: 80px;
+  background-image: url(ikkunansiivous.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.tokasisältö-container {
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%);
+  padding: 50px 10px 60px 10px;
+  text-shadow: 0px 1px 2px grey;
+}
+
+.kolmassisältö {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px 10px 60px 10px;
+  border: 4px solid rgb(255, 255, 255);
+  margin-top: 80px;
+}
+
+.site-container {
+  max-width: 800px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+li,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+::placeholder,
+label,
+textarea,
+a {
+  font-family: roboto-regular;
+}
+
+.hienonappi {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hienonappi:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.hienonappi:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.98);
+}
+
+.mobile-topbar-nappi {
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 3px 5px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-family: Roboto-bold;
+}
+
+.mobile-topbar-nappi:active {
+  background-color: #45a049;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.topbar a:hover {
+  color: #dddddd;
+  transform: scale(1.05);
+
+}
+
+.topbar a:active {
+  color: #c6c6c6;
+  transform: scale(0.98);
+}
+
+.hinnasto-ekasisältö {
+  text-align: center;
+  background-image: url(Pyyhkiminen.jpg);
+  background-size: 100%;
+  border-radius: 10px;
+  padding: 0px;
+  border: 4px solid rgb(255, 255, 255);
+  margin-top: 140px;
+}
+
+
+
+.hinnasto-container {
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+}
+
+
+
+.hinnasto-tokasisältö,
+.hinnasto-kolmassisältö {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 10px 30px 10px;
+  border: 4px solid rgb(255, 255, 255);
+  margin-top: 80px;
+}
+
+.hinnasto-tokasisältö ul,
+.hinnasto-kolmassisältö ul {
+  text-align: left;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.hinnasto-tokasisältö li,
+.hinnasto-kolmassisältö li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.hinnasto-tokasisältö h3,
+.hinnasto-kolmassisältö h3 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.lista-otsikko {
+  font-size: 20px;
+  font-family: Roboto-Bold;
+  list-style: none;
+}
+
+.hinnasto-ekasisältö a {
+  color: #4CAF50;
+  font-family: Roboto-bold;
+}
+
+.hinnasto-ekasisältö a:hover {
+  color: #3e8e41;
+}
+
+
+.meista-ekasisältö {
+  text-align: left;
+  background-image: url(Siivousvalineetkadessa.jpg);
+  border-radius: 10px;
+  padding: 10px 150px 10px 45px;
+  border: 4px solid rgb(255, 255, 255);
+  margin-top: 140px;
+}
+
+.meista-ekasisältö-teksti-1 {
+  margin-right: 10px;
+}
+
+.meista-ekasisältö-teksti-2 {
+  margin-right: 190px;
+  ;
+}
+
+.meista-ekasisältö-teksti-3 {
+  margin-right: 300px;
+}
+
+#logo2 {
+  max-width: 100%;
+  max-height: 140px;
+}
+
+.yhteystiedot-ekasisältö {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 50px 50px 50px;
+  border: 4px solid rgb(255, 255, 255);
+  margin-top: 140px;
+}
+
+.yhteystiedot-container {
+  text-align: left;
+}
+
+.vierekkäin {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.yhteydenotto-ekasisältö {
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 50px 50px 50px;
+  border: 4px solid rgb(255, 255, 255);
+  margin-top: 140px;
+}
+
+.yhteydenotto-form {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.yhteydenotto-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.yhteydenotto-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.yhteydenotto-form input {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #00668f;
+  outline: none;
+}
+
+.yhteydenotto-form input:focus,
+.yhteydenotto-form textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.yhteydenotto-form textarea {
+  padding: 10px;
+  text-align: left;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #00668f;
+  resize: none;
+}
+
+.yhteydenotto-form ::placeholder {
+  text-align: center;
+  font-size: 12px;
+}
+
+.puhelinnumero-teksti {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  margin-top: -7px;
+  margin-bottom: 40px;
+}
+
+.hienonappi2 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hienonappi2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.98);
+}
+
+.ikoni {
+  max-width: 100%;
+  max-height: 50px;
+  padding: 4px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00668f;
+  margin: 120px -10px -10px -10px;
+  color: #ececec;
+  padding: 50px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0px 0px 0px -35px;
+}
+
+footer a {
+  color: #bababa;
+  text-decoration: none;
+}
+
+footer a:active {
+  color: #ececec
+}
+
+.someikonit {
+  display: flex;
+  flex-direction: row;
+}
+
+.linkit {
+  display: block;
+  margin: 20px;
+  text-align: center;
+}
+
+.ota-yhteyttä {
+  display: block;
+  margin: 20px;
+  text-align: center;
+}
+
+.ota-yhteyttä p {
+  color: #bababa;
+}
+
+.seuraa-meitä {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo2 {
+  display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .topbar-mobile {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .topbar-mobile ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    max-width: 200px;
+    display: inline-block;
+  }
+
+  .topbar-mobile ul a {
+    display: inline-block;
+    margin: 10px 10px;
+  }
+
+  .topbar-mobile ul a {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .topbar {
+    display: none;
+  }
+
+  .ekasisältö {
+    margin-top: 50px;
+  }
+
+  .meista-ekasisältö {
+    text-align: center;
+    background-image: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 4px solid rgb(255, 255, 255);
+    margin-top: 50px;
+  }
+
+  .meista-ekasisältö-1,
+  .meista-ekasisältö-teksti-2,
+  .meista-ekasisältö-teksti-3 {
+    margin: 0px;
+  }
+
+  #logo2 {
+    max-width: 100%;
+    max-height: 140px;
+    margin-top: 50px;
+    display: inline-block;
+  }
+
+  .yhteystiedot-ekasisältö {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 4px solid rgb(255, 255, 255);
+    margin-top: 50px;
+  }
+
+  p,
+  li {
+    font-size: 14px;
+    ;
+  }
+
+  .hinnasto-ekasisältö {
+    background-size: cover;
+    margin-top: 50px;
+  }
+
+  .yhteydenotto-ekasisältö {
+    padding: 0px;
+    margin-top: 50px;
+  }
+
+  .hienonappi:active,
+  .hienonappi2:active {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .hienonappi:hover,
+  .hienonappi2:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #00668f;
+    margin: 120px -10px -10px -10px;
+    color: #ececec;
+    padding: 50px;
+  }
+
+  footer li {
+    margin: 10px;
+  }
+
+  .linkit {
+    margin: 0px;
+  }
+
+  .ota-yhteyttä {
+    margin: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .seuraa-meitä {
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  .ekasisältö,
+  .tokasisältö,
+  .kolmassisältö,
+  .hinnasto-ekasisältö,
+  .hinnasto-tokasisältö,
+  .hinnasto-kolmassisältö,
+  .meista-ekasisältö,
+  .yhteystiedot-ekasisältö {
+    border-radius: 30px;
+  }
+
+  .yhteystiedot-ekasisältö h1 {
+    font-size: 25px;
+  }
+
+
+  .hinnasto-container {
+    border-radius: 20px;
+  }
+}
+
+
+.topbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.topbar ul a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.topbar ul a button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
