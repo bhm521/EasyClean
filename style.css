@@ -106,7 +106,7 @@ body {
   margin-top: 80px;
 }
 
-.site-container {
+main {
   max-width: 800px;
   margin: auto;
   box-sizing: border-box;
